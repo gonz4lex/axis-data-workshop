@@ -21,9 +21,9 @@
 * Natural Language Processing
 
 * Cloud Computing
- + AWS
- + Azure
- + Google Cloud Studio
+  + AWS
+  + Azure
+  + Google Cloud Studio
 
 
 
