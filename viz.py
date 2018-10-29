@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 import json
 import random
 
-with open('axis-data-workshop\\thrones.json') as f:
+with open('thrones.json') as f:
     d = json.load(f)
 
 HOUSE_NUMBER = 14
