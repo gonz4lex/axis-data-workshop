@@ -35,6 +35,8 @@ Detailed explanations of algorithms, technical knowledge and considerations for 
     + Cross validation
 
 * Curse of dimensionality (p > n)
+    + Computational workload
+    + Dimensional Redundancy
 
 * Dimensionality reduction
   + Principal Component Analysis: create new variables as linear, orthogonal combinations of features.
@@ -66,6 +68,11 @@ Not sure if this next section will be included, perhaps it's better suited for N
   + Azure
   + Google Cloud Studio
 
+### Use of Big Data in the tourism and hospitality industry
+
+* Revenue Management
+* Financial performance and 
+
 ### Other things
 
 Pursue opportunities to learn:
@@ -75,3 +82,4 @@ Pursue opportunities to learn:
 * 1 low level performant language: Fortran, **C++**.
 
 * [Github](https://github.com/): It's the Instagram for open source software nerds. Get on it.
+
