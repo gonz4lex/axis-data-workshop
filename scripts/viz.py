@@ -40,34 +40,36 @@ df = df.rename(index = str,
                         'characters': 'name'
              })
 
+top_houses = df.groupby('house').count().sort_values(by = 'name', ascending = False).head()
 
-df.groupby('house').count().sort_values(by = 'name', ascending = False)
+df = df[df['house'].isin(list(dev.index))]
 
 
 df['gold'] = np.nan
 df['weapons'] = np.nan
-df['gold_multiplier'] = np.nan
-df['weapons_multiplier'] = np.nan
 
-for i in range(len(df)):
+# df['gold_multiplier'] = np.nan
+# df['weapons_multiplier'] = np.nan
 
-    if df['house'][i] == "Stark":  
-        df['gold_multiplier'][i] = 1.8
-        df['weapons_multiplier'][i] = 0.8
+# for i in range(len(df)):
 
-    elif df['house'][i] == "Night's Watch":
-        df['gold_multiplier'][i] = 0.8
-        df['weapons_multiplier'][i] = 1.8
+#     if df['house'][i] == "Stark":  
+#         df['gold_multiplier'][i] = 1.8
+#         df['weapons_multiplier'][i] = 0.8
 
-    else:
-        df['gold_multiplier'][i] = 1
-        df['weapons_multiplier'][i] = 1
+#     elif df['house'][i] == "Night's Watch":
+#         df['gold_multiplier'][i] = 0.8
+#         df['weapons_multiplier'][i] = 1.8
+
+#     else:
+#         df['gold_multiplier'][i] = 1
+#         df['weapons_multiplier'][i] = 1
 
 random.seed(2018)
 
 for i in range(len(df)):
-    df['gold'][i] = random.randint(20, 100) * df['gold_multiplier'][i]
-    df['weapons'][i] = random.randint(20, 100) * df['weapons_multiplier'][i] / 2
+    df['gold'][i] = random.randint(20, 100)
+    df['weapons'][i] = random.randint(20, 100)
 
 # df = df[
 #         df['house'].isin(
@@ -75,7 +77,7 @@ for i in range(len(df)):
 #         )
 #     ]
 
-df = df[df['house'] != "Include"]
+
 
 sns.pairplot(x_vars = 'weapons', 
              y_vars = 'gold', 
