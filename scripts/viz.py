@@ -40,44 +40,23 @@ df = df.rename(index = str,
                         'characters': 'name'
              })
 
-top_houses = df.groupby('house').count().sort_values(by = 'name', ascending = False).head()
+top_houses = df.groupby('house').count().sort_values(by = 'name',
+                                                     ascending = False).head()
+                                                     
 
-df = df[df['house'].isin(list(dev.index))]
-
-
+df = df[df['house'].isin(
+                        list(top_houses.index)
+                        )
+                    ]
+                    
 df['gold'] = np.nan
 df['weapons'] = np.nan
-
-# df['gold_multiplier'] = np.nan
-# df['weapons_multiplier'] = np.nan
-
-# for i in range(len(df)):
-
-#     if df['house'][i] == "Stark":  
-#         df['gold_multiplier'][i] = 1.8
-#         df['weapons_multiplier'][i] = 0.8
-
-#     elif df['house'][i] == "Night's Watch":
-#         df['gold_multiplier'][i] = 0.8
-#         df['weapons_multiplier'][i] = 1.8
-
-#     else:
-#         df['gold_multiplier'][i] = 1
-#         df['weapons_multiplier'][i] = 1
 
 random.seed(2018)
 
 for i in range(len(df)):
-    df['gold'][i] = random.randint(20, 100)
-    df['weapons'][i] = random.randint(20, 100)
-
-# df = df[
-#         df['house'].isin(
-#             ['Stark', 'Night\'s Watch']
-#         )
-#     ]
-
-
+    df['gold'][i] = random.gauss(200, 20)
+    df['weapons'][i] = random.gauss(100, 1)
 
 sns.pairplot(x_vars = 'weapons', 
              y_vars = 'gold', 
@@ -88,4 +67,3 @@ sns.pairplot(x_vars = 'weapons',
 plt.show()
 
 df.reset_index().drop('index', axis = 1)
-
