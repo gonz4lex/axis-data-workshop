@@ -10,30 +10,38 @@ import json
 import random
 
 with open('thrones.json') as f:
-    d = json.load(f)
+    data = json.load(f)
 
-HOUSE_NUMBER = 14
+HOUSE_NUMBER = len(data['house'])
 
 chars = pd.DataFrame()
 
 for i in range(HOUSE_NUMBER):
-    tmp = pd.DataFrame.from_dict(d['house'][i])
+    tmp = pd.DataFrame.from_dict(data['house'][i])
     chars = pd.concat([chars, tmp], ignore_index = True)
 
-chars = chars.rename(index = str,
+with open('gender.json') as f:
+    data = json.load(f)
+
+gender = pd.DataFrame()
+
+for i in range(2):
+    tmp = pd.DataFrame.from_dict(data['gender'][i])
+    gender = pd.concat([gender, tmp], ignore_index = True)
+
+df = chars.merge(gender,
+                  left_on = 'characters',
+                  right_on = 'characters',
+                  how = 'outer')
+
+df = df.rename(index = str,
                      columns = {
                         'name': 'house',
                         'characters': 'name'
              })
 
 
-chars.groupby('house').count().sort_values(by = 'name', ascending = False)
-
-df = chars[
-        chars['house'].isin(
-            ['Lannister', 'Stark', 'Night\'s Watch']
-        )
-    ]
+df.groupby('house').count().sort_values(by = 'name', ascending = False)
 
 
 df['gold'] = np.nan
@@ -51,18 +59,23 @@ for i in range(len(df)):
         df['gold_multiplier'][i] = 0.8
         df['weapons_multiplier'][i] = 1.8
 
+    else:
+        df['gold_multiplier'][i] = 1
+        df['weapons_multiplier'][i] = 1
+
 random.seed(2018)
 
 for i in range(len(df)):
-    df['gold'][i] = random.randint(50, 1000) * df['gold_multiplier'][i]
+    df['gold'][i] = random.randint(20, 100) * df['gold_multiplier'][i]
     df['weapons'][i] = random.randint(20, 100) * df['weapons_multiplier'][i] / 2
 
-df = df[
-        df['house'].isin(
-            ['Stark', 'Night\'s Watch']
-        )
-    ]
+# df = df[
+#         df['house'].isin(
+#             ['Stark', 'Night\'s Watch']
+#         )
+#     ]
 
+df = df[df['house'] != "Include"]
 
 sns.pairplot(x_vars = 'weapons', 
              y_vars = 'gold', 

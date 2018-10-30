@@ -4,11 +4,18 @@
 
 * Business Intelligence Analyst at MTS Globe.
 * Associate Professor at University of the Balearic Islands.
-* 
+* BSc Economics - no programming background
+* Google-fu black belt
+
+> Google-fu
+>
+> (noun) Skill in using search engines (especially Google) to quickly find useful information on the Internet.
+
 ---
 
-* Data is widely available; what is scarce is the ability to extract wisdom from it. (Hal Varian)
-* Big Data is like teenage sex: everybody talks about it, nobody really know how to do it, everyone thinks everyone else is doing it so everyone claims they are doing it. (Dan Ariely)
+> Data is widely available; what is scarce is the ability to extract wisdom from it. (Hal Varian)
+
+> Big Data is like teenage sex: everybody talks about it, nobody really know how to do it, everyone thinks everyone else is doing it so everyone claims they are doing it. (Dan Ariely)
 
 #### What this is
 
