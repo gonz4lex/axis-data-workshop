@@ -74,6 +74,3 @@ plt.show()
 
 df.reset_index().drop('index', axis = 1)
 
-
-
-
