@@ -1,5 +1,7 @@
 ## Notes for the talk
 
+Content might be found [here](https://medium.com/open-machine-learning-course/open-machine-learning-course-topic-1-exploratory-data-analysis-with-pandas-de57880f1a68).
+
 #### About me
 
 * Business Intelligence Analyst at MTS Globe.
