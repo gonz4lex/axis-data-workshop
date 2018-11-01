@@ -77,4 +77,26 @@ sns.pairplot(x_vars = 'weapons',
 
 plt.show()
 
-df.reset_index().drop('index', axis = 1)
+# df.reset_index().drop('index', axis = 1)
+
+## Inspection and stuff
+
+df.shape
+df.head(10)
+df.tail()
+df.size
+df.describe()
+df.isnull().sum()
+full.corr()
+
+full.sample(10)
+full.loc[1:20,
+         ['name', 'gold']
+        ]
+
+## Data viz
+
+plt.hist(full['gold'], bins = 15, normed = 1, alpha = 0.7)
+plt.bar(full['gender'], height = full['gold'])
+
+plt.show()

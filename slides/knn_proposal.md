@@ -41,7 +41,7 @@ Drop rows from the dataset or fill them with values:
 
 #### Creating new columns
 
-    df['new_column'] = df['column_1'] / ['column_1']
+    df['new_column'] = df['column_1'] / ['column_2']
 
 #### Inspection
 
