@@ -17,6 +17,8 @@ Content might be found [here](https://medium.com/open-machine-learning-course/op
 
 > Data is widely available; what is scarce is the ability to extract wisdom from it. (Hal Varian)
 
+>We are overwhelmed by information, not because there is too much, but because we don't know how to tame it. (Stephen Few)
+
 > Big Data is like teenage sex: everybody talks about it, nobody really know how to do it, everyone thinks everyone else is doing it so everyone claims they are doing it. (Dan Ariely)
 
 #### What this is
