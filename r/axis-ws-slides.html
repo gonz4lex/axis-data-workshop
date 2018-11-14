@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Big Data Fundamentals</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Alex Gonzalez" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Big Data Fundamentals
+## and engineering with Python
+### Alex Gonzalez
+### 2018/11/14 (updated: 2018-11-14)
+
+---
+
+
+
+
+background-image: url(https://cdn-images-1.medium.com/max/1200/1*PPIp7twJJUknfohZqtL8pQ.png)
+
+???
+
+---
+class: inverse, center, middle
+
+# Get Started
+
+---
+
+# About me
+
+
+.pull-left[
+- Business Intelligence Analyst at MTS Globe
+
+- Associate Professor at UIB.
+
+- BSc Economics - no programming background
+
+- Google-fu black belt
+]
+
+--
+
+.pull-right[
+
+&gt; Google-fu
+&gt;
+&gt; (noun) Skill in using search engines (especially Google) to quickly find useful information on the Internet.
+
+]
+
+--
+
+&lt;img src="https://media.giphy.com/media/AYhNomPYtxFOU/giphy.gif" width="300px" height="250px" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+# Introduction
+
+- What this is:
+
+Some considerations when working with big data, high-level overview of complex statistical techniques, applications of big data and just a little bit of math.
+
+--
+
+- What this is not:
+
+Detailed explanations of algorithms, technical programming knowledge or considerations for big data processing.
+
+---
+class: inverse, middle, center
+
+# Issues raised with Big Data
+
+---
+
+### Moore's Law
+
+.pull-left[
+Every two years, computing power increases by a factor of two.
+Data follows the same path, but does knowledge?
+
+
+&gt; Data is widely available; what is scarce is the ability to extract wisdom from it.
+(Hal Varian)
+
+
+&gt; We are overwhelmed by information, not because there is too much, but because we don't know how to tame it. 
+(Stephen Few)
+
+]
+
+--
+
+.pull-right[
+![](https://media.giphy.com/media/qL4stkxLFYo6s/giphy.gif)
+
+]
+---
+
+# The curse of dimensionality
+
+Big Data problems are usually due to a high number of attributes rather than observations. This has several undesired effects:
+
+--
+
+1. Computational workload
+
+--
+
+1. Dimensional redundancy
+
+--
+
+1. Overfitting
+
+--
+
+![](https://datascienceomar.files.wordpress.com/2016/07/screenshot-2016-07-04-14-07-40.png?w=900)
+
+---
+
+# Solutions
+
+
+The cross validation or holdout methods assess how the results of our analysis will generalize to an independent dataset.
+
+--
+
+![](https://cdn-images-1.medium.com/max/1600/1*pJ5jQHPfHDyuJa4-7LR11Q.png)
+
+---
+
+# Dimensionality reduction
+
+- __Principal Component Analysis__: create new variables as linear, orthogonal combinations of features
+
+--
+
+- __Partial Least Squares__: similar to PCA, uses the annotated label to maximize inter-class variance.
+
+--
+
+&lt;img src="https://qph.fs.quoracdn.net/main-qimg-5536da4263ae42a0936c6252e5abd334" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+# Dimensionality reduction
+
+- __Canonical Corelation Analysis__: find relationships from cross-covariance matrices.
+
+--
+
+- __Discriminant Analysis__: mainly for classification, can be used for reduction.
+
+&lt;img src="https://cdn-images-1.medium.com/max/2000/1*LN-b7yIBAJWdegK8Em69yA.png" style="display: block; margin: auto auto auto 0;" /&gt;
+--
+
+- __Shrinkage models (Ridge and LASSO)__: mainly for classification, can be used for reduction.
+
+
+&lt;img src="https://i.stack.imgur.com/UaoPh.png" style="display: block; margin: auto;" /&gt;
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script>
+(function() {
+  var i, text, code, codes = document.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+})();
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
