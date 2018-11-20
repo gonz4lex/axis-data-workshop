@@ -16,14 +16,6 @@ output:
 options(htmltools.dir.version = FALSE)
 ```
 
-
-class: inverse, center, middle
-
-# Get Started
-
----
-
-
 # About me
 
 
@@ -70,6 +62,10 @@ Some considerations when working with big data, high-level overview of complex s
 - What this is not:
 
 Detailed explanations of algorithms, technical programming knowledge or considerations for big data processing.
+
+--
+
+Materials can be found at https://gonz4lex.github.io/axis-data-workshop/.
 
 ---
 class: inverse, middle, center
