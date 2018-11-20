@@ -153,7 +153,7 @@ knitr::include_graphics('https://qph.fs.quoracdn.net/main-qimg-5536da4263ae42a09
 
 # Dimensionality reduction
 
-- __Canonical Corelation Analysis__: find relationships from cross-covariance matrices.
+- __Canonical Correlation Analysis__: find relationships from cross-covariance matrices.
 
 --
 
