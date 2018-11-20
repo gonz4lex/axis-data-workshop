@@ -3,7 +3,7 @@
 ## Loading data
 
     pd.read_csv('\data\dataset.csv')
-    
+
     with open('dataset.json') as f:
         d = json.load(f)
 
@@ -67,31 +67,25 @@ Drop rows from the dataset or fill them with values:
     plot.set_xlabel('label')
     plot.set_ylabel('label')
 
-
 ### Statistics
 
     df.corr()
 
-
-
 ## k Nearest Neighbours
 
 * Non parametric model
-  + makes no assumptions on the distribution of the data
+  * makes no assumptions on the distribution of the data
 * For regression and classification
-  + average of neighbours
-  + majority vote
+  * average of neighbours
+  * majority vote
 
 * The model finds the *k* nearest neighbours of any given data point based on a specified distance metric in a two-dimensional plane.
 
 ** scatter plot about here **
 
-#### Important decisions
+### Important decisions
 
 * k: number of neighbours to choose - higher values return inaccurate predictions
 * distance metric: depends on the problem - normally Euclidean is used
 
 ** distance metrics about here **
-
-
-
