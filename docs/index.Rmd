@@ -47,7 +47,7 @@ knitr::include_graphics('https://media.giphy.com/media/AYhNomPYtxFOU/giphy.gif')
 
 ???
 
-Every cool presenter does this so I supposed I might as well.
+Every cool presenter does this so I supposed I might as well...
 
 ---
 
