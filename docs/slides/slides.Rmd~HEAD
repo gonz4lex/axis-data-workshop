@@ -1,0 +1,174 @@
+---
+title: "Big Data Fundamentals"
+subtitle: "and engineering with Python"
+author: "Alex Gonzalez"
+date: "2018/11/14 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+background-image: url(https://cdn-images-1.medium.com/max/1200/1*PPIp7twJJUknfohZqtL8pQ.png)
+
+???
+
+---
+class: inverse, center, middle
+
+# Get Started
+
+---
+
+# About me
+
+
+.pull-left[
+- Business Intelligence Analyst at MTS Globe
+
+- Associate Professor at UIB.
+
+- BSc Economics - no programming background
+
+- Google-fu black belt
+]
+
+--
+
+.pull-right[
+
+> Google-fu
+>
+> (noun) Skill in using search engines (especially Google) to quickly find useful information on the Internet.
+
+]
+
+--
+
+```{r, echo=FALSE, out.width = "300px", out.height="250px", fig.align='center'}
+knitr::include_graphics('https://media.giphy.com/media/AYhNomPYtxFOU/giphy.gif')
+```
+
+
+---
+
+# Introduction
+
+- What this is:
+
+Some considerations when working with big data, high-level overview of complex statistical techniques, applications of big data and just a little bit of math.
+
+--
+
+- What this is not:
+
+Detailed explanations of algorithms, technical programming knowledge or considerations for big data processing.
+
+---
+class: inverse, middle, center
+
+# Issues raised with Big Data
+
+---
+
+### Moore's Law
+
+.pull-left[
+Every two years, computing power increases by a factor of two.
+Data follows the same path, but does knowledge?
+
+
+> Data is widely available; what is scarce is the ability to extract wisdom from it.
+(Hal Varian)
+
+
+> We are overwhelmed by information, not because there is too much, but because we don't know how to tame it. 
+(Stephen Few)
+
+]
+
+--
+
+.pull-right[
+![](https://media.giphy.com/media/qL4stkxLFYo6s/giphy.gif)
+
+]
+---
+
+# The curse of dimensionality
+
+Big Data problems are usually due to a high number of attributes rather than observations. This has several undesired effects:
+
+--
+
+1. Computational workload
+
+--
+
+1. Dimensional redundancy
+
+--
+
+1. Overfitting
+
+--
+
+![](https://datascienceomar.files.wordpress.com/2016/07/screenshot-2016-07-04-14-07-40.png?w=900)
+
+---
+
+# Solutions
+
+
+The cross validation or holdout methods assess how the results of our analysis will generalize to an independent dataset.
+
+--
+
+![](https://cdn-images-1.medium.com/max/1600/1*pJ5jQHPfHDyuJa4-7LR11Q.png)
+
+---
+
+# Dimensionality reduction
+
+- __Principal Component Analysis__: create new variables as linear, orthogonal combinations of features.
+
+--
+
+- __Partial Least Squares__: similar to PCA, uses the annotated label to maximize inter-class variance.
+
+--
+
+```{r, echo=FALSE, fig.align='center'}
+knitr::include_graphics('https://qph.fs.quoracdn.net/main-qimg-5536da4263ae42a0936c6252e5abd334')
+```
+
+
+---
+
+# Dimensionality reduction
+
+- __Canonical Corelation Analysis__: find relationships from cross-covariance matrices.
+
+--
+
+- __Discriminant Analysis__: mainly for classification, can be used for reduction.
+
+```{r, echo=FALSE, fig.align='left'}
+knitr::include_graphics('https://cdn-images-1.medium.com/max/2000/1*LN-b7yIBAJWdegK8Em69yA.png')
+```
+
+---
+# Dimensionality Reduction
+
+- __Shrinkage models__: mainly for classification, can be used for reduction.
+
+```{r, echo=FALSE, fig.align='center'}
+knitr::include_graphics('https://i.stack.imgur.com/UaoPh.png')
+```
