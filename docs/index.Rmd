@@ -1,8 +1,8 @@
 ---
-title: "Big Data Fundamentals"
-subtitle: "and engineering with Python"
+title: "Analysis problems, data solutions"
+subtitle: "Big Data Principles"
 author: "Alex Gonzalez"
-date: "2018/11/14 (updated: `r Sys.Date()`)"
+date: "2018/11/21"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -16,7 +16,6 @@ output:
 options(htmltools.dir.version = FALSE)
 ```
 
-background-image: url(https://cdn-images-1.medium.com/max/1200/1*PPIp7twJJUknfohZqtL8pQ.png)
 
 ???
 
@@ -63,7 +62,7 @@ knitr::include_graphics('https://media.giphy.com/media/AYhNomPYtxFOU/giphy.gif')
 
 - What this is:
 
-Some considerations when working with big data, high-level overview of complex statistical techniques, applications of big data and just a little bit of math.
+Some considerations when working with big data, high-level overview of complex statistical techniques and applications of big data.
 
 --
 
@@ -165,10 +164,104 @@ knitr::include_graphics('https://cdn-images-1.medium.com/max/2000/1*LN-b7yIBAJWd
 ```
 
 ---
-# Dimensionality Reduction
+# Dimensionality reduction
 
 - __Shrinkage models__: mainly for classification, can be used for reduction.
 
 ```{r, echo=FALSE, fig.align='center'}
 knitr::include_graphics('https://i.stack.imgur.com/UaoPh.png')
 ```
+
+
+---
+background-image: url(https://ianalyticsorg.files.wordpress.com/2017/08/netflix_logo.png?w=1100)
+background-size: 100px
+background-position: 90% 8%
+
+# Sparse Data
+
+__The Netflix Prize__ was an open competition for the best collaborative filtering algorithm to predict user ratings for films, based on previous ratings without any other information about the users or films, i.e. without the users or the films being identified except by numbers assigned for the contest.
+
+--
+
+```{r, echo=FALSE, fig.align='center'}
+knitr::include_graphics('https://cdn-images-1.medium.com/max/1200/1*iwQf4YzX_iIBf1dYfkrblw.png')
+```
+
+---
+
+# Artificial Intelligence
+
+--
+
+- Deep Learning
+
+--
+
+- Reinforcement Learning
+
+--
+
+- Computer Vision
+
+---
+
+# Natural Language Processing
+
+--
+
+- Sentiment Analysis
+
+--
+
+- Machine Translation
+
+--
+
+- _Bayesian Spam Filtering_: word frequency in spam v. non-spam document corpus
+
+--
+
+- Chatbots
+
+---
+class: center, inverse
+
+# Other things
+
+Pursue opportunities to learn:
+
+--
+
+1 Open Source Scripting language: Julia, Python, R.
+
+--
+
+1 SQL Variant: Microsoft SQL, PostgreSQL.
+
+--
+
+1 low level performant language: Fortran, C++.
+
+---
+class: center
+
+
+# Other things
+
+It's the Instagram for open source software nerds. Get on it.
+
+![](https://pc.watch.impress.co.jp/img/pcw/docs/1125/486/01_l.png)
+---
+
+class: inverse, center, middle
+
+# Any questions?
+
+---
+class: center, bottom, fullscale
+background-image: url(https://media.giphy.com/media/13py6c5BSnBkic/giphy.gif)
+background-position: 50% 50%
+background-size: 75%
+
+# Thanks!
