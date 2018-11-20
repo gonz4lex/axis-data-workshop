@@ -1,5 +1,5 @@
 ---
-title: "Analysis problems, data solutions"
+title: "Analysing problems, data solutions"
 subtitle: "Big Data Principles"
 author: "Alex Gonzalez"
 date: "2018/11/21"
@@ -34,7 +34,7 @@ class: inverse, center, middle
 
 - Associate Professor at UIB.
 
-- BSc Economics - no programming background
+- BSc Economics, MSc Big Data Analytics - no programming background
 
 - Google-fu black belt
 ]
