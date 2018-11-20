@@ -17,14 +17,12 @@ options(htmltools.dir.version = FALSE)
 ```
 
 
-???
-
----
 class: inverse, center, middle
 
 # Get Started
 
 ---
+
 
 # About me
 
@@ -51,10 +49,13 @@ class: inverse, center, middle
 
 --
 
-```{r, echo=FALSE, out.width = "300px", out.height="250px", fig.align='center'}
+```{r, echo=FALSE, out.width = "250px", out.height="200px", fig.align='center'}
 knitr::include_graphics('https://media.giphy.com/media/AYhNomPYtxFOU/giphy.gif')
 ```
 
+???
+
+Every cool presenter does this so I supposed I might as well.
 
 ---
 
@@ -204,6 +205,12 @@ knitr::include_graphics('https://cdn-images-1.medium.com/max/1200/1*iwQf4YzX_iIB
 
 - Computer Vision
 
+--
+
+```{r, echo=FALSE, fig.align='center'}
+knitr::include_graphics('https://www.mytectra.com/media/wysiwyg/Blog/deep-learning.png')
+```
+
 ---
 
 # Natural Language Processing
@@ -223,6 +230,12 @@ knitr::include_graphics('https://cdn-images-1.medium.com/max/1200/1*iwQf4YzX_iIB
 --
 
 - Chatbots
+
+--
+
+```{r, echo=FALSE, fig.align='center'}
+knitr::include_graphics('https://miro.medium.com/max/1036/1*z_EFTnhzxA3FJROcjOqNXg.png')
+```
 
 ---
 class: center, inverse
