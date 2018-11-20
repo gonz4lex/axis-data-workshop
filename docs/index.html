@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Big Data Fundamentals</title>
+    <title>Analysing problems, data solutions</title>
     <meta charset="utf-8">
     <meta name="author" content="Alex Gonzalez" />
     <link href="libs/remark-css/default.css" rel="stylesheet" />
@@ -11,17 +11,16 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Big Data Fundamentals
-## and engineering with Python
+# Analysing problems, data solutions
+## Big Data Principles
 ### Alex Gonzalez
-### 2018/11/14 (updated: 2018-11-20)
+### 2018/11/21
 
 ---
 
 
 
 
-background-image: url(https://cdn-images-1.medium.com/max/1200/1*PPIp7twJJUknfohZqtL8pQ.png)
 
 ???
 
@@ -40,7 +39,7 @@ class: inverse, center, middle
 
 - Associate Professor at UIB.
 
-- BSc Economics - no programming background
+- BSc Economics, MSc Big Data Analytics - no programming background
 
 - Google-fu black belt
 ]
@@ -66,7 +65,7 @@ class: inverse, center, middle
 
 - What this is:
 
-Some considerations when working with big data, high-level overview of complex statistical techniques, applications of big data and just a little bit of math.
+Some considerations when working with big data, high-level overview of complex statistical techniques and applications of big data.
 
 --
 
@@ -164,11 +163,103 @@ The cross validation or holdout methods assess how the results of our analysis w
 &lt;img src="https://cdn-images-1.medium.com/max/2000/1*LN-b7yIBAJWdegK8Em69yA.png" style="display: block; margin: auto auto auto 0;" /&gt;
 
 ---
-# Dimensionality Reduction
+# Dimensionality reduction
 
 - __Shrinkage models__: mainly for classification, can be used for reduction.
 
 &lt;img src="https://i.stack.imgur.com/UaoPh.png" style="display: block; margin: auto;" /&gt;
+
+
+---
+background-image: url(https://ianalyticsorg.files.wordpress.com/2017/08/netflix_logo.png?w=1100)
+background-size: 100px
+background-position: 90% 8%
+
+# Sparse Data
+
+__The Netflix Prize__ was an open competition for the best collaborative filtering algorithm to predict user ratings for films, based on previous ratings without any other information about the users or films, i.e. without the users or the films being identified except by numbers assigned for the contest.
+
+--
+
+&lt;img src="https://cdn-images-1.medium.com/max/1200/1*iwQf4YzX_iIBf1dYfkrblw.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Artificial Intelligence
+
+--
+
+- Deep Learning
+
+--
+
+- Reinforcement Learning
+
+--
+
+- Computer Vision
+
+---
+
+# Natural Language Processing
+
+--
+
+- Sentiment Analysis
+
+--
+
+- Machine Translation
+
+--
+
+- _Bayesian Spam Filtering_: word frequency in spam v. non-spam document corpus
+
+--
+
+- Chatbots
+
+---
+class: center, inverse
+
+# Other things
+
+Pursue opportunities to learn:
+
+--
+
+1 Open Source Scripting language: Julia, Python, R.
+
+--
+
+1 SQL Variant: Microsoft SQL, PostgreSQL.
+
+--
+
+1 low level performant language: Fortran, C++.
+
+---
+class: center
+
+
+# Other things
+
+It's the Instagram for open source software nerds. Get on it.
+
+![](https://pc.watch.impress.co.jp/img/pcw/docs/1125/486/01_l.png)
+---
+
+class: inverse, center, middle
+
+# Any questions?
+
+---
+class: center, bottom, fullscale
+background-image: url(https://media.giphy.com/media/13py6c5BSnBkic/giphy.gif)
+background-position: 50% 50%
+background-size: 75%
+
+# Thanks!
     </textarea>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
@@ -209,7 +300,7 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
 (function () {
   var script = document.createElement('script');
   script.type = 'text/javascript';
-  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
   if (location.protocol !== 'file:' && /^https?:/.test(script.src))
     script.src  = script.src.replace(/^https?:/, '');
   document.getElementsByTagName('head')[0].appendChild(script);
