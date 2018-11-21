@@ -65,7 +65,7 @@ Detailed explanations of algorithms, technical programming knowledge or consider
 
 --
 
-Materials can be found at https://gonz4lex.github.io/axis-data-workshop/.
+Slides can be found at https://gonz4lex.github.io/axis-data-workshop/, materials at https://github.com/gonz4lex/axis-data-workshop.
 
 ---
 class: inverse, middle, center
@@ -203,7 +203,7 @@ knitr::include_graphics('https://cdn-images-1.medium.com/max/1200/1*iwQf4YzX_iIB
 
 --
 
-```{r, echo=FALSE, fig.align='center'}
+```{r, echo=FALSE, fig.align='center', out.width = "85%"}
 knitr::include_graphics('https://www.mytectra.com/media/wysiwyg/Blog/deep-learning.png')
 ```
 
@@ -229,7 +229,7 @@ knitr::include_graphics('https://www.mytectra.com/media/wysiwyg/Blog/deep-learni
 
 --
 
-```{r, echo=FALSE, fig.align='center'}
+```{r, echo=FALSE, fig.align='center', out.width = "85%"}
 knitr::include_graphics('https://miro.medium.com/max/1036/1*z_EFTnhzxA3FJROcjOqNXg.png')
 ```
 
